@@ -1,0 +1,19 @@
+.card {
+  margin-left: 40px;
+  max-width: 300px;
+}
+
+.weather-container {
+  min-width: 800px;
+  height: 750px;
+  margin: 10px;
+  border: 1px solid #555;
+}
+
+.mat-drawer-content {
+  margin-left: -264px !important;
+}
+
+.mat-drawer {
+  min-width: 400px !important;
+}

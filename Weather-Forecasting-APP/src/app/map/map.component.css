@@ -1,0 +1,134 @@
+.mp {
+    position: absolute;
+    left: 40%;
+    bottom: 1%;
+}
+
+/* p{
+    position: relative;
+    left: 293px;
+    top: 40px;
+} */
+
+#CL {
+    position: relative;
+    left: 141px;
+}
+
+#CR {
+    position: relative;
+    left: 68px;
+    font-size: large;
+}
+
+.imgCon {
+    position: relative;
+    left: 16px;
+    top: 45px;
+}
+
+#C {
+    position: relative;
+    left: 267px;
+    bottom: 64px;
+    font-size: x-large;
+}
+
+#F {
+    position: relative;
+    left: 267px;
+    bottom: 31px;
+    font-size: x-large;
+}
+
+#LT {
+    position: relative;
+    left: 170px;
+}
+
+#L {
+    position: relative;
+    left: 275px;
+    bottom: 32px;
+}
+
+#WK {
+    position: relative;
+    left: 180px;
+}
+
+#WKN {
+    position: relative;
+    left: 265px;
+    bottom: 33px;
+}
+
+#WD {
+    position: relative;
+    left: 16px;
+}
+
+#WDN {
+    position: relative;
+    left: 140px;
+    bottom: 32px;
+}
+
+#H {
+    position: relative;
+    left: 16px;
+}
+
+#HN {
+    position: relative;
+    left: 100px;
+    bottom: 32px;
+}
+
+.mainC {
+    position: relative;
+    left: 80px;
+}
+
+.mainH {
+    position: relative;
+    left: 60px;
+}
+
+.time {
+    position: relative;
+    right: 35px;
+}
+
+.mainWind {
+    position: relative;
+    left: 36px;
+    bottom: 20px
+}
+
+.mainWD {
+    position: relative;
+    left: 0px;
+    bottom: 90px;
+}
+
+.mainHumidity {
+    position: relative;
+    left: 380px;
+    bottom: 154px;
+}
+
+.mapMainCSS {
+    position: absolute;
+    bottom: -190px;
+}
+
+#iconText {
+    position: relative;
+    left: 26px;
+    font-family: cursive;
+}
+
+#icon {
+    height: 106px;
+}

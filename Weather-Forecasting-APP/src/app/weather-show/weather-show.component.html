@@ -1,0 +1,92 @@
+
+
+      <mat-drawer-container class="weather-container">
+          <mat-drawer mode="side" opened>
+              <mat-card class="card" *ngIf='show' style="background-color: darkgrey;margin-top: 2px;">
+  <mat-card-header>
+ 
+    <mat-card-title>Current Location</mat-card-title>
+    <mat-card-subtitle>{{show?.location?.name}},{{show?.location?.region}},{{show?.location?.country}}</mat-card-subtitle>
+  </mat-card-header>
+ 
+  <mat-card-content>
+    <p>
+        {{show?.current?.condition?.text}}
+    <img src={{show?.current?.condition?.icon}} ><br><br/>
+      <label  *ngIf="show?.current?.temp_c">
+
+        {{show?.current?.temp_c}} °C</label><br><br/>
+      <label  *ngIf="show?.current?.temp_f">
+
+        {{show?.current?.temp_f}} °F</label><br><br/>
+      <label> 
+        Local Time : 
+        {{show?.location?.localtime}}
+      </label>
+      <br><br/>
+      <label>
+        Wind Speed :
+        {{show?.current?.wind_kph}}
+      </label>
+      <br><br/>
+      <label>
+        Wind Direction :
+        {{show?.current?.wind_dir}}
+      </label>
+      <br><br/>
+      <label>
+        Humidity :
+        {{show?.current?.humidity}}
+      </label>
+    </p>
+  </mat-card-content>
+</mat-card>
+<div *ngIf='hide'>
+    <mat-card class="card" style="background-color: lavenderblush; margin-top: 12px;">
+  <mat-card-header>
+     
+      <mat-card-title >Selected Location</mat-card-title>
+      <mat-card-subtitle>{{show2?.location?.name}},{{show2?.location?.region}},{{show2?.location?.country}}</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+        <p>
+            {{show2?.current?.condition?.text}}
+        <img src={{show2?.current.condition.icon}} ><br><br/>
+          <label  >
+    
+            {{show2?.current?.temp_c}} °C</label><br><br/>
+          <label  >
+    
+            {{show2?.current?.temp_f}} °F</label><br><br/>
+          <label> 
+            Local Time : 
+            {{show2?.location?.localtime}}
+          </label>
+          <br><br/>
+          <label>
+            Wind Speed :
+            {{show2?.current?.wind_kph}}
+          </label>
+          <br><br/>
+          <label>
+            Wind Direction :
+            {{show2?.current?.wind_dir}}
+          </label>
+          <br><br/>
+          <label>
+            Humidity :
+            {{show?.current?.humidity}}
+          </label>
+        </p>
+      </mat-card-content>
+    </mat-card>
+    </div>
+
+  
+
+          </mat-drawer>
+          <mat-drawer-content>
+            <app-map (send)="getFromMap($event)" ></app-map>
+          </mat-drawer-content>
+        </mat-drawer-container>
+
