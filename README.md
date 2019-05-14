@@ -1,5 +1,5 @@
 Steps to run the project,
 
-Open terminal.
-npm install.
-npm start
+1.Open terminal.
+2.npm install.
+3.npm start
